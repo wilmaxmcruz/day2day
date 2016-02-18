@@ -1,0 +1,148 @@
+.header.container {
+	background-color: #DCDCDC;
+	height: 100px;
+}
+
+.header .logo {
+	padding: 10px 15px;
+	background-color: #F5F5F5;
+}
+
+.header .logo img {
+	height: 80px;
+	width: 91px;
+}
+
+.header .eva {
+	background-color: #F5F5F5;
+	margin: 0;
+	margin-right: 7px;
+	padding: 21px;
+}
+
+.header .name {
+	font-size: 22px;
+	margin-left: 10px;
+	top: -24px;
+	position: relative;
+}
+
+.header .setting {
+	margin: 33px 0 0 0;
+	width: 35px;
+	height: 35px;
+}
+
+.header .calendar {
+	width: 120px;
+	height: 70px;
+}
+
+.header .date {
+	position: relative;
+	float: left;
+	margin-right: 12px;
+}
+
+.header .icon-calendar {
+	position: absolute;
+	top: 0;
+	right: -68px;
+}
+
+.header .date span {
+	display: block;
+}
+
+.header .date .d {
+	font-size: 36px;
+}
+
+.header .date .m {
+	font-size: 22px;
+	margin-top: -4px;
+}
+
+.header .date .y {
+	font-size: 17px;
+	margin-top: -2px;
+}
+
+.login-current {
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.login-current > .user-name{
+	margin: 14px 10px 0 0;
+}
+
+.login-current > .profile{
+	width: 38px;
+	height: 38px;
+}
+
+.login-information {	
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 86px;
+	right: 0;
+	width: 290px;
+	height: 160px;
+	z-index: 9999;
+	padding: 10px;
+	box-sizing: border-box;	
+	border: 1px solid #888;
+}
+
+.login-information > .top {
+	width: 100%;
+	height: 80px;
+}
+
+.login-information > .top > .user-name{
+	margin: 18px 0 0 12px;
+	width: 178px;
+}
+
+.login-information > .top > .user-type{
+	font-size: 13px;
+	font-style: italic;
+	margin: 6px 0 0 12px;
+}
+
+.login-information > .top > img.profile {
+	border: 1px solid #E0E0E0;
+	width: 70px;
+	height: 70px;
+}
+
+.login-information > .bottom {
+	width: 100%;
+	height: 60px;
+	border-top: 1px solid #E0E0E0;
+	padding-top: 15px;
+}
+
+.login-information > .bottom > .manage-users {
+	margin-right: 12px;
+}
+
+.login-information > .arrow,
+.login-information > .arrow-border {
+	border-color: transparent;
+	border-bottom-color: #FFFFFF;
+	border-style: dashed dashed solid;
+	border-width: 0 10.5px 10.5px;
+	position: absolute;
+	right: 9px;
+	top: -9px;
+	z-index: 99;
+	height: 0;
+	width: 0;
+}
+
+.login-information > .arrow-border {
+	border-bottom-color: #333;
+	top: -10px;
+}

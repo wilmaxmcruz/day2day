@@ -1,0 +1,1257 @@
+/****************/
+/****** D3 ******/
+/****************/
+.arc path {
+	stroke: #fff;
+}
+
+.slice:hover, 
+.bar:hover,
+.dot:hover {
+	fill: #EE4037 !important;
+}
+
+.axis {
+	font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.line,
+.line-a,
+.line-b {
+	fill: none;
+	stroke: #41C6DA;
+	stroke-width: 2px;
+}
+
+.line-b {
+	stroke: #EE4037;
+}
+
+.dot,
+.dot-a,
+.dot-b {
+	stroke: #41C6DA;
+	fill: #fff;
+	stroke-width: 2px;
+}
+
+.dot-b {
+	stroke: #EE4037;
+}
+
+.area {
+	fill: #B3DEE4;
+}
+
+polyline {
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+
+/*************/
+
+#menu {
+    height: 370px;
+    overflow-y: auto;
+    border: 1px dotted;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#menu li {
+	float: left;
+	position: relative;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+#menu li > a.question {
+	background-color: #D8D8D8;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+}
+
+#menu li > a.question > img {
+	width: 100px;
+	height: 100px;
+	margin: 0px 0 0 25px;
+}
+
+#menu li span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 10px;
+	font-size: 21px;
+}
+
+/*li > .date {
+	position: absolute;
+	top: 60px;
+	left: 10px;
+}*/
+
+li > .calendar-answers {
+	background-color: #DFDFDF;
+	height: 354px;
+	position: relative;
+	border-top: 1px dotted #1C1C1C;
+}
+
+li > .calendar-answers .popup-answer-text {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 888;
+	background-color: #DFDFDF;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	border:12px solid #CECECE;
+	box-sizing: border-box;
+}
+
+li > .calendar-answers .popup-answer-text .close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	}
+
+li > .calendar-answers .popup-answer-text .close > a > img {
+	width: 25px;
+	height: 25px;
+}
+
+li > .calendar-answers .popup-answer-text ul.answer > li {
+	border-bottom: 1px dotted #1c1c1c;
+	margin-bottom: 20px;
+}
+
+li > .calendar-answers .popup-answer-text ul.answer {
+	width: 100%;	
+	height: 100%;
+	overflow-y: auto;
+}
+
+li > .calendar-answers .popup-answer-text ul.answer > li > .date {
+	font-size: 12px;
+	color: #fff;
+	background-color: #1c1c1c;
+	padding: 10px;
+	display: inline-block;
+}
+
+li > .calendar-answers .popup-answer-text ul.answer > li > .choice {
+	margin: 15px 0;
+}
+
+li > .calendar-answers .ui-state-active,
+li > .calendar-answers .ui-widget-content .ui-state-active,
+li > .calendar-answers .ui-widget-header .ui-state-active {
+	background-color: initial;
+	color: initial;
+}
+
+li .ui-widget-content {
+	width: 400px;
+	height: 310px;
+	background-color: inherit;
+	border: 0;
+	margin: 0 auto;
+}
+
+li .ui-state-disabled {
+	opacity: .5;
+	filter: Alpha(Opacity=50);
+	background-color: #DFDFDF !important;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	background-color: #1C1C1C;
+}
+
+li > .calendar-answers span.square {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #88DEEB;
+	margin: 4px 10px 0 16px;
+	border: 1px solid #ccc;
+}
+
+li > .calendar-answers span.text {
+	font-size: 13px;
+	position: relative;
+	top: -6px;
+}
+
+li > .gauge.circle-b {
+	top: 50px;
+	right: 0;
+	position: absolute;
+}
+
+#data.graphics > li {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-bottom: 15px;
+}
+
+#data.graphics .question {
+	background-color: #CECECE;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#data.graphics .question > .icon {
+	width: 50px;
+	height: 50px;
+}
+
+#data.graphics .question > span.query {
+	position: absolute;
+	top: 10px;
+	left: 60px;
+	width: 740px;
+	height: 30px;
+}
+
+#data.graphics .question > a.right {
+	margin: 14px 10px 0 10px;
+}
+
+#data.graphics .question > a.minimize-graphic > img,
+#data.graphics .question > a.graphic-list > img,
+#data.graphics .question > a.right > svg {
+	width: 25px;
+	height: 25px;
+}
+
+#data.graphics .question > a.right > svg path {
+	fill: #000;
+}
+
+#data.graphics .question.not-visible {
+	background-color: #dfdfdf;
+}
+
+#data.graphics .question.not-visible > a.right > svg path,
+#data.graphics .question.not-visible svg path,
+#data.graphics .question.not-visible span {
+	color: #a5a5a5;
+	fill: #a5a5a5;
+}
+
+#data.graphics a:hover path {
+	fill: #41C6DA !important;
+}
+
+#data.graphics a.minimize {
+	transform: rotate(180deg);
+	transform-origin: 50% 50% 0px;
+}
+
+.popup-graphic {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background-color: #F5F5F5;
+	box-sizing: border-box;
+	padding: 10px;
+	z-index: 999;
+}
+
+.popup-graphic > a {
+	text-align: right;
+	padding: 5px;
+	display: block;
+	width: 120px;
+	height: 35px;
+	position: relative;
+}
+
+.popup-graphic > a:hover,
+.popup-graphic > a:hover.selected {
+	background-color: #EE4037;
+}
+
+.popup-graphic > a.selected {
+	background-color: #41C6DA;
+}
+
+.popup-graphic > a > span {
+	position: absolute;
+	right: 45px;
+	top: 15px;
+}
+
+.popup-graphic > a > img {
+	width: 35px;
+	height: 35px;
+}
+
+/*****************/
+/**** DragDrop ***/
+/*****************/
+.gridster > ul.graphics > li > svg {
+	border-top: 1px dotted #1C1C1C;
+	background-color: #EAEAEA;
+	box-sizing: border-box;
+}
+
+.gridster .preview-holder {
+	border: none!important;
+	background: red!important;
+}
+
+/****************/
+/*** Original ***/
+/****************/
+.user-current > a {
+	margin: 20px 0 0 20px; 
+	display: inline-block;
+	width: 100%;
+}
+
+.user-current > a > img.user {
+	width: 60px;
+	height: 60px;
+}
+
+.user-current > a > span {
+	position: relative;
+	top: -23px;
+	left: 10px;
+}
+
+.questions .item .options {
+	width: 780px;
+}
+
+.content span.query {
+	font-size: 30px;
+	display: block;
+	margin-bottom: 60px;
+	width: 780px;
+}
+
+.item {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.item .subitem {
+	float: left;
+	width: auto;
+	min-width: 60px;
+	text-align: center;
+	margin: 0 20px 30px;
+}
+
+.item .subitem > .answer {
+    max-width: 200px;
+    display: inline-block;
+}
+
+.item .subitem > .answer .caption {
+	font-size: 26px;
+	margin: 10px 0;
+	display: block;
+}
+
+.item .instruction {
+	display: block;
+	margin-top: 10px !important;
+}
+
+.item ul.list {
+	border: 1px solid #ccc;
+	width: 580px;
+	height: 230px;
+	padding: 10px;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.item ul.list > li {
+	width: 100%;
+	background-color: #DFDFDF;
+	padding: 15px;
+	box-sizing: border-box;
+	margin: 15px 0;
+	color: #212121;
+	cursor: pointer;
+}
+
+.item ul.list > li:first-child
+{
+	margin-top: 0;
+}
+
+.item ul.list > li:last-child
+{
+	margin-bottom: 0;
+}
+
+.item ul.list > li.selected {
+	background-color: #56B14C;
+	color: #F5F5F5;
+}
+
+.item .option-save {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 50px;
+}
+
+.item a.save {	
+	width: 100px;
+    display: inline-block;
+    margin: 5px 0;
+    height: 40px;
+    background-color: #41C6DA;
+    padding: 11px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.item a.save span {
+	color: #F5F5F5;
+	font-size: 18px;
+}
+
+.item .option-save .last-save {
+    font-size: 13px;
+    width: 100px;
+    color: #4E4E4E;
+    text-align: center;
+    line-height: 18px;
+}
+
+.item .option-save .last-save img {
+    margin-right: 7px;
+}
+
+.item span.division {
+    font-size: 32px;
+    margin: 0 18px;
+}
+
+.questions .escala .marker {
+	font-size: 20px;
+	margin-top: -30px;
+	width: 150px;
+}
+
+.questions .escala .marker.max {
+	text-align: right;
+	margin-left: -150px;
+}
+
+.numeral > span.query,
+.duplo-numeral > span.query,
+.texto > span.query,
+.report span.query {
+	margin-bottom: 20px !important;
+}
+
+.numeral input[type='text'],
+.duplo-numeral input[type='text'] {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	height: 50px;
+	width: 230px;
+	font-size: 30px;
+	text-align: right;
+}
+
+.texto textarea.free-text {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	resize: none;
+	height: 180px;
+	width: 750px;
+	font-size: 16px;
+	display: block;
+}
+
+.back-menu > img {
+	width: 45px;
+	height: 45px;
+}
+
+/************************/
+/******** REPORT ********/
+/************************/
+
+.report span.title {
+	margin-bottom: 10px;
+	display: inline-block;
+	font-weight: 500;
+}
+
+/*relationship*/
+.report > div.relationship > ul.people {
+	width: 280px;
+	height: 376px;
+	border: 1px solid #868686;
+	background-color: #fff;
+	padding: 10px;
+	box-sizing: border-box;	
+	overflow: auto;
+}
+
+.report > div.relationship > ul.people > li
+{
+	margin-bottom: 10px;
+}
+
+.report > div.relationship > ul.people > li a {
+	width: 258px;
+	height: 50px;	
+	display: inline-block;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.report > div.relationship > ul.people > li a.selected {
+	background-color: #41C6DA;
+	font-weight: 300;
+	color: #fff;
+}
+
+.report > div.relationship > ul.people > li img.photo {
+	width: 40px;
+	height: 40px;
+}
+
+.report > div.relationship > ul.people > li span.name {
+	position: relative;
+	top: -15px;
+	left: 5px;
+}
+
+.report > div.relationship > ul.people > li img.unread {
+	margin-top: 12px;
+}
+
+/*message*/
+.report > div.message {
+	margin-bottom: 30px;
+}
+
+.report > div.message > ul.report-saved {
+	width: 600px;
+	height: 214px;
+	border: 1px solid #868686;
+	background-color: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.report > div.message > ul.report-saved > li {
+	clear: both;	
+	display: inline-block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: inline-block;
+	border-bottom: 1px solid #ddd;	
+}
+
+.report > div.message > ul.report-saved > li:first-child {
+	padding-top: 0;
+}
+
+.report > div.message > ul.report-saved > li:last-child {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+.report > div.message > ul.report-saved > li div.photo > img {
+	width: 40px;
+	height: 40px;
+}
+
+.report > div.message > ul.report-saved > li div.header-message {
+	width: 500px;
+	margin-bottom: 8px;
+}
+
+.report > div.message > ul.report-saved > li div.header-message > span.name {
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.report > div.message > ul.report-saved > li div.header-message > span.date {
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.report > div.message > ul.report-saved > li div.text {
+	width: 500px;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+/*script*/
+.report > div.script > textarea.transcription {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	resize: none;
+	height: 80px;
+	width: 600px;
+	font-size: 16px;
+	display: block;
+	padding: 4px 8px;
+	border-color: #868686;
+}
+
+.report > div.script > textarea.transcription.rec {
+	background-color: #fde8e7;
+}
+
+.report > div.script > button.mic {
+	width: 45px;
+	height: 45px;
+	margin: 18px 0 0 25px;
+	background: url("../images/mic.svg") no-repeat 0 0;
+	position: relative;
+	z-index: 1;
+}
+
+.report > div.script > button.mic:active {
+	background-position: 0 -45px;
+}
+
+.report > div.script > span.instruction {
+	display: none;
+	margin: 72px -190px 0 0 !important;
+	background-color: #1C1C1C;
+	color: #F5F5F5;
+	font-size: 13px;
+	font-weight: 500;
+	padding: 10px 20px;
+	font-style: normal;
+	position: relative;
+	z-index: 0;
+}
+
+.report > div.script > span.status {
+	font-size: 12px;
+}
+
+.report > div.script > span.status > span.rec {
+	color: #ee4037;
+	font-weight: 500;
+}
+
+.report > div.script > a.send {	
+	top: 20px;
+	left: auto;
+	width: 120px;
+	position: relative;
+	display: inline-block;
+}
+
+.report > div.script > a.send > span {
+	color: #F5F5F5;
+	width: 40px;
+	height: 42px;
+	left: 50px;
+	position: absolute;
+	top: 12px;
+	font-size: 18px;
+}
+
+/*******************/
+/****** ADMIN ******/
+/*******************/
+.list-questions {
+	width: 210px;
+	height: 509px;
+	overflow-y: auto;
+	background-color: #D8D8D8;
+	margin-left: 20px;	
+	border: 1px solid #ccc;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.list-questions > li {
+	border: 0;
+	height: 30px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.list-questions > li:last-child {
+	border: 0;
+}
+
+.list-questions > li > a.new {
+	width: 198px;
+	display: inline-block;
+}
+
+.list-questions > li > a.delete {
+	left: -40px;
+	top: 0;
+	position: absolute;
+}
+
+.list-questions > li > a.delete.view {
+	left: 0px;
+}
+
+.list-questions > li > a.update {
+	width: 100%;
+	height: 30px;
+	display: inline-block;     
+}
+
+.list-questions > li > a.selected {
+	background-color: #F5F5F5;
+}
+
+.list-questions > li > a > span {
+	position: relative;
+	font-size: 14px;
+	top: -11px;
+	left: 5px;;
+}
+
+.list-questions > li > a > img {
+	width: 30px;
+	height: 30px;
+}
+
+.manage-question {
+	width: 450px;
+	margin-left: 20px;
+	margin-bottom: 100px;
+}
+
+.manage-question > div {
+	margin-bottom: 25px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.manage-question > div.visible {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+/*.manage-question > .visible > input[type='checkbox'] {
+	margin-right: 5px;
+}
+
+.manage-question > .visible > input[type='checkbox'],*/
+.manage-question > .visible > span:not(.instruction) {
+	display: inline-block;
+}
+
+.manage-question .label {
+	font-size: 18px;
+}	
+.manage-question > div > span, 
+.manage-question > div > input, 
+.manage-question > div > select {
+	display: block;
+	margin: 5px 0;
+}
+
+.manage-question > div > .limit {
+	position: absolute;
+	right: 8px;
+	top: 0px;
+	color: #EE4037;
+	text-align: right;
+}
+
+.manage-question > .title > .limit {
+	top: 47px;
+}
+
+.manage-question > .query > .limit {
+	top: 115px;
+}
+
+
+.manage-question > div > input[type='text'],
+.manage-question > div > select,
+.manage-question > div > textarea {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300; 
+	height: 35px;
+	width: 100%;
+	font-size: 15px;
+	box-sizing: border-box;	
+}
+
+.manage-question > div > textarea {
+	resize: none;
+	height: 100px;
+}
+
+.manage-question > .question-type > select {
+	width: 200px;	
+	margin: 10px 0;
+}
+
+.manage-question .instruction,
+.item .instruction{
+	font-size: 15px;
+	color:#1C1C1C;
+	font-style: italic;
+	margin: 5px 0;
+}
+
+.manage-question .icon > ul {
+	height: 140px;
+	overflow-y: auto;
+	border: 1px dotted #BEBEBE;
+	margin-bottom: 10px;
+}
+
+.manage-question .icon > ul > li {
+	float: left;
+	cursor: pointer;
+	margin: 10px 0 0 10px;
+	width: 70px;
+	height: 70px;
+}
+
+.manage-question .icon > ul > li.selected {
+	/*box-shadow: 0px 0px 15px #41C6DA;*/
+	background-color: #41C6DA;
+}
+
+.manage-question .icon > ul > li > img {
+	height: 70px;
+	width: 70px;
+}
+
+.manage-question .button {
+	right: 0;
+	top: 0;
+}
+
+.manage-question .question-type input[type='text'] {
+	height: 30px;
+	margin-bottom: 5px;
+	width: 200px;
+}
+
+.manage-question .question-type a.add-field {
+	margin-top: 5px;
+	display: inline-block;
+	width: 177px;
+}
+
+.manage-question .question-type a.cancel-field {
+	position: relative;
+	top: 4px;
+	left: 2px;
+}
+
+.manage-question .question-type a.cancel-field > img{
+	width: 15px;
+	height: 15px;
+}
+
+.manage-question .question-type .range > select {
+	margin: 0 10px;
+}
+
+.manage-question .question-type .markers{
+	margin-top: 10px;
+}
+
+.manage-question .question-type .numeral > .num > input[type='text'] {
+	width: 70px;
+	font-size: 14px;
+}
+
+.manage-question .question-type .numeral > .num.min > span {
+	margin-right: 5px;
+}
+
+.list-manage div {
+	margin-bottom: 27px;
+	padding: 10px;
+	background-color: #88DEEB;
+	width: 200px;
+	height: 241px;
+	overflow-y: auto;
+	background-color: #D8D8D8;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.list-manage span.label {
+	margin: 5px 0 15px;
+	display: inline-block;
+	font-weight: 500;
+}
+
+.list-manage ul > li.checkbox {
+	width: 178px;
+	height: 30px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.list-manage ul > li.checkbox.selected {
+	background-color: #EE4037;
+	color: #F5F5F5;
+}
+
+.list-manage ul > li.checkbox > span.name {
+	position: absolute;
+	top: 7px;
+	left: 37px;
+}
+
+.list-manage ul > li.checkbox > img {
+	width: 30px;
+	height: 30px;
+}
+
+.visible > .checkbox {
+    padding: 10px;
+    margin-top: 0;
+    cursor: pointer;
+    border: 1px dotted #555;
+}
+
+.visible > .checkbox.selected {
+	background-color: #EE4037;
+	color: #F5F5F5;
+	border: 1px solid #EE4037;
+}
+
+/****** FIM ADMIN ****/
+
+/*** SETTING ***/
+.setting {
+	position: relative;
+}
+
+#setting-field {
+	background-color: #fff;
+	width: 230px;
+	height: 270px;
+	border: 1px #C3C3C3 solid;
+	position: absolute;
+	top: 35px;
+	right: 25px;
+	z-index: 999;
+}
+
+#setting-field ul li {
+	margin: 10px;
+}
+
+#setting-field span.title {
+	font-size: 17px;
+	font-weight: 500;
+	margin: 13px;
+	display: block;
+}
+
+a#confirm-setting {
+	float: right;
+	margin: 0 10px 0 0;
+}
+
+a#confirm-setting .caption {
+	font-size: 18px;
+	margin-top: -23px;
+	margin-left: 37px;
+	display: block;
+	color: #F5F5F5;
+}
+
+/*** FIM - SETTING ***/
+
+.back {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: 40px;
+}
+
+
+/*********************
+**** MANAGE USERS ****
+**********************/
+.manage-user {
+	margin-bottom: 50px;
+}
+
+.manage-user > .data-user > div {
+	width: 445px;
+	margin: 0px 50px 15px;
+}
+
+.manage-user .error input[type="text"],
+.manage-user .error input[type="password"],
+.item input[type="text"].error {
+	background-color: #FFECEC;
+	border: 1px solid #ee4037;
+}
+
+.manage-user .label {
+	font-size: 18px;
+	display: block;
+	width: 100%;
+	text-align: left;    
+}
+
+.manage-user .instruction {
+	height: 40px;
+	margin: -50px -142px;
+	width: 130px;
+	display: inline-block;
+	text-align: right;
+	line-height: 18px;
+}
+
+.manage-user .instruction > span {
+	color: #ee4037;
+	font-style: italic;
+	font-size: 14px;
+}
+
+.manage-user input[type="text"],
+.manage-user input[type="password"] {
+	width: 445px;
+	height: 45px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	display: block;
+	margin: 2px 0;
+	padding: 0 10px;
+}
+
+.manage-user .photo > img {
+	width: 120px;
+	height: 120px;
+}
+
+.manage-user a.change-photo {
+	width: 120px;
+	background-color: #41C6DA;
+	height: 36px;
+	display: block;
+	margin: 10px 0 0;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	color: #F5F5F5;
+}
+
+.manage-user .user-type {
+	margin-bottom: 25px !important;
+	border-bottom: 1px dotted #999;
+	padding-bottom: 25px
+}
+
+.manage-user .user-type .type {
+	margin: 10px 85px 0 0;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+}
+
+.manage-user .user-type .type:last-child {
+	margin-right: 0;
+}
+
+.manage-user .user-type .type .letter {
+	font-size: 58px;
+	background-color: #D8D8D8;
+	width: 90px;
+	height: 90px;
+	display: block;
+	padding-top: 16px;
+	font-weight: 500;
+	border: 1px solid #aaaaaa;
+	box-sizing: border-box;
+}
+
+.manage-user .user-type .type .identification {
+	font-size: 18px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.manage-user .user-type .type.selected .letter {
+	background-color: #41C6DA;
+	border-color: #41C6DA;
+}
+
+.manage-user .user-type .type.selected .identification {
+	color: #41C6DA;
+}
+
+.manage-user .data-user > .button > a {
+	display: inline-block;
+	width: 424px;
+}
+
+.list-user > ul {
+	width: 235px;
+	height: 480px;
+	overflow-y: auto;
+	background-color: #D8D8D8;
+	border: 1px solid #ccc;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.list-user > ul > li {
+	border: 0;
+	height: 40px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.list-user > ul > li > a > img {
+	width: 30px;
+	height: 30px;
+    position: relative;
+    top: 5px;
+    left: 0;
+}
+
+.list-user .title {
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.list-user .update {
+	width: 100%;
+	height: 40px;
+	display: inline-block;  
+}
+
+.list-user a.selected {
+	background-color: #F5F5F5;
+}
+
+.list-user .new {
+	width: 100%;
+	height: 40px;
+	display: inline-block;
+}
+
+.list-user .new > span {
+	position: relative;
+	top: -16px;
+	left: 40px;
+	display: block;
+	width: 170px;
+}
+
+.list-user .update > .name {
+	position: relative;
+	top: -25px;
+	left: 40px;
+	width: 170px;
+	display: block;
+}
+
+.list-user .update > .function {
+	display: block;
+	position: relative;
+	left: 40px;
+	top: -24px;
+	font-size: 13px;
+	font-style: italic;
+	width: 170px;
+}
+
+.list-user .delete {
+	left: -40px;
+	top: 0;
+	position: absolute;
+	z-index: 99;
+}
+
+.list-user .delete.view {
+	left: 0px;
+}
+
+.users-dependents {
+	border-top: 1px dotted #999;
+	margin-top: 25px !important;
+	padding-top: 25px;
+}
+
+.users-dependents > .label {
+	margin-bottom: 10px;
+}
+
+.users-dependents ul {
+	border: 1px solid #ccc;
+	height: 150px;
+	width: 100%;
+	overflow-y: auto;
+	background-color: #D8D8D8;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.users-dependents > ul > li.checkbox {
+	float: left;
+	width: 178px;
+	height: 30px;
+	margin: 0 25px 15px 0;
+	cursor: pointer;
+	position: relative;
+}
+
+.users-dependents > ul > li.checkbox.selected {
+	background-color: #EE4037;
+	color: #F5F5F5;
+}
+
+.users-dependents > ul > li.checkbox > span.name {
+	position: absolute;
+	top: 7px;
+	left: 37px;
+}
+
+.users-dependents > ul > li.checkbox > img {
+	width: 30px;
+	height: 30px;
+}

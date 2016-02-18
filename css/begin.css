@@ -1,0 +1,298 @@
+.band {
+	background-color: #41C6DA;
+	height: 4px;
+}
+
+.begin {
+	margin-top: -30px;
+}
+
+.info {
+	width: 565px;
+	margin: 0 30px 0 10px;
+}
+
+.info .logo {
+	text-align: center;
+	margin: 25px 0;
+}
+
+.info hr {
+	border: 0;
+	border-bottom: 1px solid #000;
+	margin: 25px 0;
+}
+
+.info > .text > .description {
+	height: 160px;
+	font-size: 16px;
+	width: 100%;
+	overflow: auto;
+}
+
+.info > .text > .description > p {
+	margin: 15px 0;
+	line-height: 1.6;
+	text-align: justify;
+}
+
+.info > .text > .welcome {
+	font-size: 24px;
+	font-weight: 100;
+	margin-bottom: 5px;
+}
+
+.info > .text .highlight {
+	font-weight: 300;
+	color: #2597A7;
+}
+
+.info ul.foundations > li {
+	float: left;
+	margin-right: 45px;
+}
+
+.info ul.foundations > li:last-child {
+	margin-right: 0;
+}
+
+.login {
+	background-color: #f7f7f7;
+	padding: 20px 20px 0;
+	width: 290px;
+	height: 155px;
+	box-sizing: border-box;
+
+	margin-top: -12px;	
+
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.login > .logo {
+	width: inherit;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.login > .logo > img {
+	width: 150px;
+	margin: 10px 
+}
+
+.login > span {
+	width: 80px;
+	display: inline-block;
+	text-align: right;
+	margin: 0 5px 0 0;
+}
+.login > input {
+	width: 160px;
+	height: 30px;
+	margin-bottom: 10px;
+	font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.login > a.enter {
+	background-color: #41C6DA;
+	text-align: center;
+	padding: 10px;
+	float: right;
+	margin-bottom: 10px;
+	color: #F5F5F5;
+}
+
+ul#profile.auto {
+	overflow-y: auto;
+} 
+
+.scheme {
+	background-color: #f7f7f7;
+	padding: 20px 20px 0;
+	width: 290px;
+	height: 320px;
+	box-sizing: border-box;
+
+	margin-top: 50px;
+
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.scheme > img {
+	width: 260px;
+	height: 260px;
+}
+
+/******************/
+/* USERS - ADMIN  */
+/******************/
+.users-admin {
+	border: 1px dotted #1C1C1C;
+	height: 340px;
+	width: 100%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+
+.question-all-user {
+	margin-top: 10px;
+}
+
+.users-admin > li {
+	float: left;
+	margin: 10px 10px 15px 0;
+	width: 260px;
+	height: 75px;
+}
+
+.users-admin  > li > div > span.name {
+	margin-left: 10px;
+}
+
+.users-admin > li > a {
+	position: relative;
+	top: -60px;
+	left: 70px;
+}
+
+.users-admin > li > a.statistic {
+	left: 85px;
+}
+
+.users-admin > li > a.report {
+	left: 100px;
+}
+
+.users-admin > li > a.report > span.unread {
+	width: 12px;
+	height: 12px;
+	background-color: #EE4037;
+	border-radius: 6px;
+	display: inline-block;
+	margin-bottom: -5px;
+	margin-left: -10px;
+	z-index: 999;
+    position: relative;
+}
+
+.users-admin > li img.user {
+	width: 60px;
+	height: 60px;	
+}
+
+.users-admin > li > a > img {
+	width: 35px;
+	height: 35px;
+}
+
+.users-admin > li > span.name {
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+/******************/
+/* USERS - TUTOR  */
+/******************/
+.users-tutor {
+	border: 1px dotted #4A4A4A;
+	height: 350px;
+	width: 565px;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow-y: auto;
+	margin-left: 20px;	
+}
+
+.users-tutor > li {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border: 0;
+	border-bottom: 1px dotted #4A4A4A;
+}
+
+.users-tutor > li:last-child {
+	border: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.users-tutor > li > a.report,
+.users-tutor > li > a.statistic {
+	margin-left: 30px;
+}
+
+.users-tutor > li img.user {
+	width: 60px;
+	height: 60px;	
+}
+
+.users-tutor > li > a img {
+	width: 50px;
+	height: 50px;
+}
+
+.users-tutor > li > span.name {
+	top: -25px;
+	position: relative;
+	left: 10px;
+	width: 220px;
+	display: inline-block;
+}
+
+
+.users-tutor > li > a.report > span.unread {
+	width: 16px;
+	height: 16px;
+	background-color: #EE4037;
+	border-radius: 8px;
+	display: inline-block;
+	margin-bottom: -4px;
+	margin-left: -16px;
+}
+
+
+/******************/
+
+#date,
+#date-fixed {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 22px;	
+	position: relative;
+	top: -17px;
+	left: 10px;	
+}
+
+#date {
+	width: 250px;
+}
+
+#datepicker {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 20px;	
+	width: 185px;
+	margin: 20px 0 0 -80px;
+	position: relative;
+	z-index: 999;
+}
+
+span.feedback
+{
+	font-size: 21px;
+	display: block;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	width: 100px;
+    text-align: center;
+}

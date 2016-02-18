@@ -1,0 +1,158 @@
+/*** configuração ***/
+*html {
+	height: 100%;
+}
+html, body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300; 
+	min-width:900px; 	
+	width:100%;
+	font-size:16px;
+	color:#212121;	
+} 
+body {
+	margin:0;
+	padding:0;
+	background-color:#F5F5F5;	
+}
+
+body.inside-svg {
+	background-color:transparent;
+}
+
+/*** base ***/
+.clear {	
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+#preload {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+.loading {
+	position:absolute;
+	width:64px;
+	height:64px;	
+	top:50%;
+	left:50%;
+	margin:-32px 0 0 -32px;	
+}
+
+#preload-async {
+	position: fixed;
+	left: 50%;
+	top: -40px;
+	background-color: #878787;
+	padding: 10px;
+	margin-left: -69px;
+}
+
+#preload-async > #process {
+	color: #F5F5F5;
+}
+
+.container {
+	width:auto;
+	height:auto;
+	margin:auto;	
+	/*border: 1px solid red;*/
+}
+.section {
+	width:900px;
+	height:auto;
+	margin:auto; 
+	clear: both;
+	position: relative;
+	/*border: 1px solid green;*/
+}
+
+#content { 
+	margin: 30px 0;
+}
+
+.content {
+	height: 370px;	
+}
+
+span.bold {
+	font-weight: 500;
+}
+
+.hidden {
+	display: none !important;
+}
+
+#trace {
+	top: 0;
+	left: 0;
+	padding: 5px;
+	background-color: #1C1C1C;
+	color: #fff;
+	opacity: 0.7;
+	position: fixed;
+	display: none;
+}
+
+.disabled .svg path,
+.disabled .svg circle,
+.disabled .svg polygon {
+	fill: #C6C6C6;
+}
+
+.selected > .svg path,
+.selected > .svg circle,
+.selected > .svg polygon {
+	fill: #56B14C;
+}
+
+td.complete {
+	background-color: #2BA6F5 !important;
+}
+
+td.incomplete {
+	background-color: #FFC000 !important;
+}
+
+a.back-menu.right {
+	position: relative;
+	top: -10px;
+	right: 0;
+}
+
+.button > a {
+	background-color: #41C6DA;
+	text-align: center;
+	padding: 11px;
+	color: #FFF;
+	display: inline-block;
+}
+
+/*span.checkbox {
+	width: auto;
+	padding: 10px;
+	cursor: pointer;
+	margin: 0 !important;
+    display: inline-block !important;
+    border: 1px dotted #999999;
+}
+
+span.checkbox.selected {
+	background: #EE4037 url("../images/check.svg") no-repeat 0 0;
+	border: 0;
+	color: #F5F5F5;
+	padding-left: 36px;
+	border: 1px solid #EE4037;
+}*/
